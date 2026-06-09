@@ -8,7 +8,7 @@
     "expected_output": "Should flag missing SSN and suggest adding a valid format."
   },
   {
-    "input": "Full Name:\nDOB: 12/12/1985\nAddress: 100 Oak Lane",
+    "input": "Full Name:\nDOB: 12/12/1995\nAddress: 100 Oak Lane",
     "expected_output": "Should detect missing name and request completion."
   }
 ]
