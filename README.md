@@ -1,56 +1,40 @@
-# Smart Forms Compliance Agent 
-A multi-step reasoning agent built with Microsoft Foundry to automate Smart form validation, compliance checks, and correction recommendations.
+# Smart Forms Compliance Agent
 
-## 🧠 Overview  
-The Smart Forms Compliance Agent analyzes any government form text and performs a structured, multi-step review:
+The Smart Forms Compliance Agent is an AI-powered assistant built using Microsoft Foundry.  
+It performs end-to-end compliance analysis on unstructured form text in a single pass — no workflows required.
 
-1. Extracts fields  
-2. Validates completeness and consistency  
-3. Identifies compliance risks  
-4. Recommends corrections  
-5. Generates a final compliance summary  
+## 🚀 What It Does
+Given any form text, the agent:
+1. Extracts key fields (name, email, address, ZIP, date, signature)
+2. Identifies missing or inconsistent fields
+3. Flags compliance risks
+4. Recommends corrections
+5. Returns a clean, human-readable compliance summary
 
-This agent is designed for modernization, reducing manual review time and improving accuracy.
+All logic is contained inside one powerful agent instruction block.
 
-## 🚀 Features  
-- Multi-step reasoning workflow  
-- JSON-based structured extraction  
-- Automated compliance validation  
-- Correction recommendations  
-- Human-readable compliance summary  
-- Built entirely in Microsoft Foundry (no code required)
+## 🧠 How It Works
+The agent follows a strict internal pipeline:
 
-## 🏗 Architecture  
-**Workflow:**  
-Start → ExtractFields → ValidateFields → RecommendFixes → SummarizeCompliance
+### 1. Field Extraction
+- Parses unstructured text
+- Normalizes fields
+- Fills missing fields with empty values
 
-**Agent:**  
-Smart-Forms-Compliance-Agent (Reasoning Agent)
+### 2. Validation
+- Detects missing required fields
+- Checks for invalid formats
+- Identifies compliance risks
 
-**Workflow Type:**  
-Sequential Workflow App
+### 3. Summary Generation
+- Produces a clear, concise compliance report
+- No JSON is exposed to the user
+- No follow-up questions unless necessary
 
-## 📦 How It Works  
-Users submit form text.  
-The workflow processes it step-by-step and returns a final compliance report.
-
-## 📄 Example Input  
-Applicant Name: John Doe
-Date of Birth:
-Address: 123 Main St
-
-## 📄 Example Output  
-Status: Needs Fixes
-Missing required field: Date of Birth
-Recommended correction: Provide valid date in MM/DD/YYYY format
-Next steps: Update missing fields and resubmit
-
-
-## 🏆 Hackathon Track  
-Reasoning Agents – Microsoft Foundry
-
-## 👩‍💻 Author  
-Milka Bekele  
-SharePoint & Power Platform Consultant  
-Washington, DC  
-
+## 🛠 Example Input
+Name: John Doe, Email:, Address:, ZIP:, Date:, Signature:
+Compliance Summary:
+Fields Present: Name (John Doe)
+Fields Missing: Email, Address, ZIP, Date, Signature
+Compliance Risks: The form is missing all required fields except for the name.
+Recommended Corrections: Provide a valid email, address, ZIP code, date, and signature.
