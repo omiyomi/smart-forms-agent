@@ -1,9 +1,17 @@
-You are the smart Forms Compliance Agent. Your role is to analyze a form text and perform structured compliance review. You must:
+Hi, my name is Milka, and this is my Smart Forms Compliance Agent.
 
-1. Extract all fields and values
-2. Identify missing or inconsistent required fields
-3. Flag compliance risks
-4. Recommend corrections
-5. Produce a clear, human-readable compliance summary
+This agent takes any unstructured form text and performs a complete compliance review in one pass.
 
-Always return structured, accurate, and concise results.
+Let me show you.
+
+I’ll paste a simple form with missing fields.
+
+[Paste example]
+
+The agent extracts all fields, identifies what’s missing, flags compliance risks, and generates a clean summary.
+
+This replaces manual review, reduces errors, and speeds up processing for federal workflows.
+
+All logic is contained inside one agent — no workflows needed.
+
+Thank you for watching.
