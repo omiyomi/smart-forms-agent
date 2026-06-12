@@ -3,16 +3,54 @@
 ![Category](https://img.shields.io/badge/Category-Compliance-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Hackathon](https://img.shields.io/badge/Agents%20League-2026-purple)
+
 ███████╗██╗  ██╗ █████╗ ███╗   ███╗████████╗
 ██╔════╝██║  ██║██╔══██╗████╗ ████║╚══██╔══╝
 ███████╗███████║███████║██╔████╔██║   ██║   
 ╚════██║██╔══██║██╔══██║██║╚██╔╝██║   ██║   
 ███████║██║  ██║██║  ██║██║ ╚═╝ ██║   ██║   
 ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   
-## 🧩 How It Works
 
-The Smart Forms Compliance Agent runs a complete compliance pipeline in a single pass:
+SMART FORMS COMPLIANCE AGENT
 
+📌 Overview
+The Smart Forms Compliance Agent is an AI-powered assistant built using Microsoft Foundry.
+It performs end-to-end compliance analysis on unstructured federal form text — all in one intelligent pass, without workflows or multi-step orchestration.
+
+This project demonstrates how a single Foundry agent can:
+
+Parse messy, unstructured text
+Extract key fields
+Validate completeness
+Flag compliance risks
+Recommend corrections
+Produce a clean, human-readable compliance summary
+
+🧠 Features
+
+✔ One-pass compliance pipeline
+All logic is embedded inside a single agent instruction block.
+
+✔ Automatic field extraction
+The agent identifies:
+Name
+Email
+Address
+ZIP
+Date
+Signature
+
+✔ Validation engine
+Flags:
+Missing required fields
+Invalid formats
+Inconsistencies
+Compliance risks
+
+✔ Clean, readable summaries
+The agent returns a polished compliance report — never JSON.
+
+🧩 How It Works
 ┌──────────────────────────────┐
 │        User Input            │
 │  (Unstructured form text)    │
@@ -45,46 +83,36 @@ The Smart Forms Compliance Agent runs a complete compliance pipeline in a single
 │ Clean compliance report      │
 └──────────────────────────────┘
 
-
-SMART FORMS COMPLIANCE AGENT
-
-# Smart Forms Compliance Agent
-
-The Smart Forms Compliance Agent is an AI-powered assistant built using Microsoft Foundry.  
-It performs end-to-end compliance analysis on unstructured form text in a single pass — no workflows required.
-
-## 🚀 What It Does
-Given any form text, the agent:
-1. Extracts key fields (name, email, address, ZIP, date, signature)
-2. Identifies missing or inconsistent fields
-3. Flags compliance risks
-4. Recommends corrections
-5. Returns a clean, human-readable compliance summary
-
-All logic is contained inside one powerful agent instruction block.
-
-## 🧠 How It Works
-The agent follows a strict internal pipeline:
-
-### 1. Field Extraction
-- Parses unstructured text
-- Normalizes fields
-- Fills missing fields with empty values
-
-### 2. Validation
-- Detects missing required fields
-- Checks for invalid formats
-- Identifies compliance risks
-
-### 3. Summary Generation
-- Produces a clear, concise compliance report
-- No JSON is exposed to the user
-- No follow-up questions unless necessary
-
-## 🛠 Example Input
+📝 Example Input
 Name: John Doe, Email:, Address:, ZIP:, Date:, Signature:
+
+✅ Example Output
 Compliance Summary:
+
 Fields Present: Name (John Doe)
 Fields Missing: Email, Address, ZIP, Date, Signature
 Compliance Risks: The form is missing all required fields except for the name.
 Recommended Corrections: Provide a valid email, address, ZIP code, date, and signature.
+
+📁 Project Structure
+smart-forms-agent/
+│
+├── README.md                # Full project documentation
+├── agent-instructions.txt   # Main agent logic (single-pass pipeline)
+└── examples/
+    ├── example-input.txt
+    └── example-output.txt
+    
+🎯 Hackathon Context
+
+This project was built for the Microsoft Agents League Hackathon to demonstrate:
+Practical use of Microsoft Foundry
+Intelligent automation for federal workflows
+How a single agent can replace multi-step workflows
+Real-world compliance automation
+
+👩🏽‍💻 Author
+Milka Bekele  
+AI + Modern Work Engineer (in progress)
+Washington, DC
+
