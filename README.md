@@ -3,6 +3,50 @@
 ![Category](https://img.shields.io/badge/Category-Compliance-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Hackathon](https://img.shields.io/badge/Agents%20League-2026-purple)
+███████╗██╗  ██╗ █████╗ ███╗   ███╗████████╗
+██╔════╝██║  ██║██╔══██╗████╗ ████║╚══██╔══╝
+███████╗███████║███████║██╔████╔██║   ██║   
+╚════██║██╔══██║██╔══██║██║╚██╔╝██║   ██║   
+███████║██║  ██║██║  ██║██║ ╚═╝ ██║   ██║   
+╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   
+## 🧩 How It Works
+
+The Smart Forms Compliance Agent runs a complete compliance pipeline in a single pass:
+
+┌──────────────────────────────┐
+│        User Input            │
+│  (Unstructured form text)    │
+└───────────────┬──────────────┘
+                │
+                ▼
+┌──────────────────────────────┐
+│      1. Field Extraction     │
+│ Extracts: name, email,       │
+│ address, ZIP, date, signature│
+└───────────────┬──────────────┘
+                │
+                ▼
+┌──────────────────────────────┐
+│       2. Validation          │
+│ Identifies missing fields,   │
+│ inconsistencies, risks       │
+└───────────────┬──────────────┘
+                │
+                ▼
+┌──────────────────────────────┐
+│   3. Compliance Summary      │
+│ Human-readable explanation   │
+│ + recommended corrections    │
+└───────────────┬──────────────┘
+                │
+                ▼
+┌──────────────────────────────┐
+│        Final Output          │
+│ Clean compliance report      │
+└──────────────────────────────┘
+
+
+SMART FORMS COMPLIANCE AGENT
 
 # Smart Forms Compliance Agent
 
